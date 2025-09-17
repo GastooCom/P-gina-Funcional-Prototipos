@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Inicio.css"; // Asegurate de crear este CSS y copiar los estilos
+import imagen0 from "../imagenes/imagen0.png";
 import imagen1 from "../imagenes/imagen1.png";
 import imagen2 from "../imagenes/imagen2.png";
 import imagen3 from "../imagenes/imagen3.png";
@@ -14,12 +15,13 @@ export default function Inicio() {
         <button className="nav-btn">← Procesos de Desarrollo. Soft</button>
         <button className="nav-btn">Gestion de Calidad. Soft</button>
         <button className="nav-btn">Recursos y Aprendizaje</button>
-        <button className="nav-btn">Metodologia en detalle →</button>
+        <button className="nav-btn">Metodologia en detalle</button>
+        <button className="nav-btn">Adicionales →</button>
       </div>
 
       {/* Título y descripción */}
       <div className="header-section">
-        <div className="icon-circle">⚙️✔️</div>
+        <div className="icon-circle"><img src={imagen0} alt="Imagen" width={150}/></div>
         <div className="header-text">
           <h1>Sistema de Gestion de Calidad de Software</h1>
           <p>
@@ -28,7 +30,7 @@ export default function Inicio() {
             desarrollo de software de alta calidad.
           </p>
         </div>
-        <div className="icon-circle">⚙️✔️</div>
+        <div className="icon-circle"><img src={imagen0} alt="Imagen" width={150}/></div>
       </div>
 
       {/* Barra de búsqueda */}
