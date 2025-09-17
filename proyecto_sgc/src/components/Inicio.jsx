@@ -6,13 +6,15 @@ import imagen2 from "../imagenes/imagen2.png";
 import imagen3 from "../imagenes/imagen3.png";
 import imagen4 from "../imagenes/imagen4.png";
 import imagen5 from "../imagenes/imagen5.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Inicio() {
+  const navigate = useNavigate();
   return (
     <div className="inicio-container">
       {/* Barra de navegación */}
       <div className="navbar">
-        <button className="nav-btn">← Procesos de Desarrollo. Soft</button>
+        <button className="nav-btn" onClick={() => navigate("/procesodesarrollosoft")}>← Procesos de Desarrollo. Soft</button>
         <button className="nav-btn">Gestion de Calidad. Soft</button>
         <button className="nav-btn">Recursos y Aprendizaje</button>
         <button className="nav-btn">Metodologia en detalle</button>

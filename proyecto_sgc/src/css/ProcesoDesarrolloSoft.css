@@ -1,0 +1,64 @@
+.pds-container {
+  background: linear-gradient(70deg, #002271, #cd0000, #ffffff);
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background-color: #024b82;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Contenido */
+.contenido {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.contenido h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.contenido p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.contenido h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* Lista de etapas */
+.lista-etapas {
+  list-style: decimal;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.lista-etapas li {
+  margin-bottom: 8px;
+}
+
+.lista-etapas span.rojo {
+  font-weight: bold;
+  color: #ff5252;
+}
