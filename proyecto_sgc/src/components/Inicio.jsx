@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Inicio.css"; // Asegurate de crear este CSS y copiar los estilos
+import imagen1 from "../imagenes/imagen1.png";
 
 export default function Inicio() {
   return (
@@ -41,7 +42,7 @@ export default function Inicio() {
             crear, mantener y mejorar sistemas de software.
           </p>
           <p className="enlace">Enlace2___________</p>
-          <div className="card-icon">✏️⚙️</div>
+          <img src={imagen1} alt="Imagen" width={100}/>
         </div>
 
         <div className="card">
