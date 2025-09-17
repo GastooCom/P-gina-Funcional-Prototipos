@@ -62,6 +62,7 @@
   border-radius: 20px;
   border: none;
   padding: 0 15px;
+  background-color: #0a2e63;
 }
 
 .search-icon {
@@ -81,8 +82,10 @@
   background: linear-gradient(120deg, #2c0d22, #342a59);
   padding: 20px;
   border-radius: 15px;
-  width: 300px;
+  width: 500px;
   text-align: left;
+  display: flex;
+  justify-content: center;
 }
 
 .card h3 {
@@ -98,6 +101,12 @@
   font-size: 2rem;
   margin-top: 15px;
 }
+
+.imagen5{
+  display: flex;
+  justify-content: center;
+}
+
  /* Segunda fila */
 .second-row {
   margin-top: 40px;

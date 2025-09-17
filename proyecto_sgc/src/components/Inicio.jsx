@@ -1,6 +1,10 @@
 import React from "react";
 import "../css/Inicio.css"; // Asegurate de crear este CSS y copiar los estilos
 import imagen1 from "../imagenes/imagen1.png";
+import imagen2 from "../imagenes/imagen2.png";
+import imagen3 from "../imagenes/imagen3.png";
+import imagen4 from "../imagenes/imagen4.png";
+import imagen5 from "../imagenes/imagen5.png";
 
 export default function Inicio() {
   return (
@@ -36,16 +40,21 @@ export default function Inicio() {
       {/* Primera fila de tarjetas */}
       <div className="cards-container">
         <div className="card">
+          <div className="textoi">
           <h3>Procesos de Desarrollo de Sofware</h3>
           <p>
             Este es un conjunto de actividades estructuradas que se siguen para
             crear, mantener y mejorar sistemas de software.
           </p>
           <p className="enlace">Enlace2___________</p>
-          <img src={imagen1} alt="Imagen" width={100}/>
+          </div>
+          <div className="imageni">
+          <img src={imagen1} alt="Imagen" width={150}/>
+          </div>
         </div>
 
         <div className="card">
+          <div className="textoi">
           <h3>Gestion de Calidad de Software</h3>
           <p>
             En este apartado veremos conjunto de actividades y procesos
@@ -53,7 +62,10 @@ export default function Inicio() {
             requisitos especificados.
           </p>
           <p className="enlace">Enlace2___________</p>
-          <div className="card-icon">⚙️👍⬆️</div>
+          </div>
+          <div className="imagen2">
+          <img src={imagen2} alt="Imagen2" width={150}/>
+          </div>
         </div>
       </div>
 
@@ -63,6 +75,7 @@ export default function Inicio() {
         {/* Columna izquierda */}
         <div className="left-column">
             <div className="card red-card">
+              <div className="textoi">
             <h3>Recursos y Aprendizaje</h3>
             <p>
                 En la gestión de calidad de software, los recursos son los medios
@@ -71,10 +84,14 @@ export default function Inicio() {
                 capacitación y experiencia para perfeccionar procesos y resultados.
             </p>
             <p className="enlace">Enlace1___________</p>
-            <div className="card-icon">👤⚙️</div>
+            </div>
+            <div className="imagen3">
+            <img src={imagen3} alt="Imagen3" width={150}/>
+            </div>
             </div>
 
             <div className="card blue-card">
+              <div className="textoi">
             <h3>Metodologias en Detalle</h3>
             <p>
                 Es el nivel donde una metodología (de investigación, de enseñanza,
@@ -83,12 +100,16 @@ export default function Inicio() {
                 fase y cómo se evalúan los resultados.
             </p>
             <p className="enlace">Enlace2___________</p>
-            <div className="card-icon">📋✔️</div>
+            </div>
+            <div className="imagen4">
+            <img src={imagen4} alt="Imagen4" width={150}/>
+            </div>
             </div>
         </div>
 
         {/* Columna derecha */}
         <div className="card pink-card tall-card">
+          <div className="textoi">
             <h3>Adicionales</h3>
             <p>
             Encuentra la sección “Sobre Nosotros”, dedicado a asegurar que cada
@@ -98,8 +119,11 @@ export default function Inicio() {
             riesgos, prevenir errores y garantizar productos de software estables
             y de calidad.
             </p>
+            </div>
+            <div className="imagen5">
+            <img src={imagen5} alt="Imagen5" width={150}/>
+            </div>
             <p className="enlace">Enlace3___________</p>
-            <div className="card-icon">👥</div>
         </div>
         </div>
     </div>
