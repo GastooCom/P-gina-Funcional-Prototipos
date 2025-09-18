@@ -1,10 +1,19 @@
 .pds-container {
-  background: linear-gradient(70deg, #002271, #cd0000, #ffffff);
+  background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
   color: white;
   font-family: Arial, sans-serif;
   min-height: 100vh;
   padding: 20px;
 }
+
+/*
+.caja-pds{
+  display:block;
+display: flex;  
+  justify-content: center;
+  width: 1200px;
+}
+*/
 
 /* Navbar */
 .navbar {
@@ -26,32 +35,32 @@
 
 /* Contenido */
 .contenido {
-  max-width: 900px;
+  max-width: 1300px;
   margin: auto;
   text-align: left;
 }
 
 .contenido h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 15px;
 }
 
 .contenido p {
-  font-size: 20px;
+  font-size: 35px;
   line-height: 1.5;
 }
 
 .contenido h2 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* Lista de etapas */
 .lista-etapas {
   list-style: decimal;
   padding-left: 20px;
-  font-size: 20px;
+  font-size: 35px;
 }
 
 .lista-etapas li {
@@ -61,4 +70,83 @@
 .lista-etapas span.rojo {
   font-weight: bold;
   color: #ff5252;
+}
+
+/*Historia de usuario número: */
+
+.cascada-container {
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: auto;
+  text-align: left;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  text-align: left;
+}
+
+/* Texto */
+.texto {
+  max-width: 55%;
+}
+
+.texto h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.texto h2 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.texto p,
+.texto ul {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.texto ul {
+  margin-left: 20px;
+}
+
+.texto li {
+  margin-bottom: 8px;
+}
+
+/* Diagrama */
+.diagrama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 100px;
+}
+
+.etapa {
+  background-color: #003366;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  min-width: 180px;
+}
+
+.etapa.grande {
+  min-width: 220px;
+}
+
+.flecha {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
