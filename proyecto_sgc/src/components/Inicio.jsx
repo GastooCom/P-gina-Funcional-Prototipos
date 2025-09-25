@@ -50,7 +50,7 @@ export default function Inicio() {
             Este es un conjunto de actividades estructuradas que se siguen para
             crear, mantener y mejorar sistemas de software.
           </p>
-          <p className="enlace">Enlace2___________</p>
+          <button className="enlace" onClick={() => navigate("/procesodesarrollosoft")}>Enlace1: Proceso de Desarrollo de Software</button>
           </div>
           <div className="imageni">
           <img src={imagen1} alt="Imagen" width={150}/>

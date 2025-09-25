@@ -5,7 +5,7 @@ export default function Inicio() {
     <div className="pds-container">
       {/* Barra de navegación */}
       <div className="navbar">
-        <button className="nav-btn">← Procesos de Desarrollo. Soft</button>
+        <button className="nav-btn p">← Procesos de Desarrollo. Soft</button>
         <button className="nav-btn">Gestion de Calidad. Soft</button>
         <button className="nav-btn">Recursos y Aprendizaje</button>
         <button className="nav-btn">Metodologia en detalle</button>
@@ -95,8 +95,67 @@ export default function Inicio() {
         <div className="flecha">↓</div>
         <div className="etapa grande">Evolucion y Mantenimiento</div>
       </div>
+           </div>
+      </div>
+
+
+    {/* ===================== */}
+    {/* Metodologías Ágiles */}
+    {/* ===================== */}
+    <div className="metodologias-container">
+      <div className="metodologias-box">
+      {/* Título principal */}
+      <div className="titulo-metodologias">
+        <h1>Metodologías Ágiles</h1>
+        <p>
+          Principios del Manifiesto Ágil <br />
+          (valores y principios básicos).
+        </p>
+      </div>
+        {/* SCRUM */}
+        <div className="scrum">
+          <h2>SCRUM</h2>
+          <ul>
+            <li><b>Principios:</b> iteraciones, entregas incrementales...</li>
+            <li><b>Roles:</b> Product Owner, Scrum Master, Equipo...</li>
+            <li><b>Ceremonias:</b> Sprint Planning, Daily Scrum...</li>
+            <li><b>Artefactos:</b> Product Backlog, Sprint Backlog...</li>
+          </ul>
+        </div>
+      </div>
+        <div className="content-grid">
+        {/* Imagen de gráfico */}
+        <div className="grafico-box">
+          <div className="grafico">
+            <div className="barra amarilla"></div>
+            <div className="barra naranja"></div>
+            <div className="barra gris"></div>
+            <div className="barra azul"></div>
+            <div className="linea"></div>
+          </div>
+        </div>
+
+        {/* XP */}
+        <div className="xp">
+          <h2>Extreme Programming (XP)</h2>
+          <ul>
+            <li><b>Principios:</b> simplicidad, comunicación...</li>
+            <li><b>Prácticas:</b> programación en pareja, TDD...</li>
+            <li><b>Beneficios:</b> calidad de código, menos errores...</li>
+          </ul>
+        </div>
+
+        {/* Kanban */}
+        <div className="kanban">
+          <h2>Kanban</h2>
+          <ul>
+            <li><b>Principios:</b> visualizar flujo, limitar WIP...</li>
+            <li><b>Elementos:</b> tablero, tarjetas, columnas...</li>
+            <li><b>Beneficios:</b> flexibilidad, eficiencia...</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
+  </div>   
   );
 }
