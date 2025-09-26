@@ -1,4 +1,44 @@
 /* ===== Fondo general ===== */
+
+.pds-container {
+  background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height:350vh;
+  padding: 20px;
+}
+
+/*
+.caja-pds{
+  display:block;
+display: flex;  
+  justify-content: center;
+  width: 1200px;
+}
+*/
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background-color: #024b82;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-btn.g{
+  background-color: #cd0000;
+}
+
 body {
   margin: 0;
   padding: 0;

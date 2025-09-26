@@ -66,7 +66,7 @@ export default function Inicio() {
             destinados a garantizar que un producto de software cumpla con los
             requisitos especificados.
           </p>
-          <p className="enlace">Enlace2___________</p>
+          <button className="enlace" onClick={() => navigate("/gestioncalidadsoft")}>Enlace2: Gestion de Calidad de Software</button>
           </div>
           <div className="imagen2">
           <img src={imagen2} alt="Imagen2" width={150}/>
