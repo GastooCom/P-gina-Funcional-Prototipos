@@ -11,9 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/procesodesarrollosoft" element={<ProcesoDesarrolloSoft />}/>
-        
         <Route path="/gestioncalidadsoft" element={<GestionCalidadSoft />} />
-        {/*<Route path="/procesodesarrollosoft" element={<ProcesoDesarrolloSoft />}/>
+        {/*
         <Route path="/recursosaprendizaje" element={<RecursosAprendizaje />} />
         <Route path="/metodologiadetalle" element={<MetodologiaDetalle />} />
         */}
