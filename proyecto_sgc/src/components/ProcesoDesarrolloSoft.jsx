@@ -1,11 +1,35 @@
 import "../css/ProcesoDesarrolloSoft.css";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-export default function Inicio() {
+export default function ProcesoDesarrolloSoft() {
+  const navigate = useNavigate();
+
+  const [mostrarBoton, setMostrarBoton] = useState(false);
+
+  useEffect(() => {
+    const manejarScroll = () => {
+      if (window.scrollY > 300) {
+        setMostrarBoton(true);
+      } else {
+        setMostrarBoton(false);
+      }
+    };
+
+    window.addEventListener("scroll", manejarScroll);
+    return () => window.removeEventListener("scroll", manejarScroll);
+  }, []);
+
+  const irArriba = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="pds-container">
       {/* Barra de navegación */}
       <div className="navbar">
-        <button className="nav-btn p">← Procesos de Desarrollo. Soft</button>
+        <button className="nav-btn" onClick={() => navigate("/")}>← Inicio</button>
+        <button className="nav-btn p">Procesos de Desarrollo. Soft</button>
         <button className="nav-btn">Gestion de Calidad. Soft</button>
         <button className="nav-btn">Recursos y Aprendizaje</button>
         <button className="nav-btn">Metodologia en detalle</button>
@@ -156,6 +180,12 @@ export default function Inicio() {
         </div>
       </div>
     </div>
+     {/* Botón Scroll to Top */}
+      {mostrarBoton && (
+        <button className="btn-arriba" onClick={irArriba}>
+          ⬆
+        </button>
+      )}
   </div>   
   );
 }

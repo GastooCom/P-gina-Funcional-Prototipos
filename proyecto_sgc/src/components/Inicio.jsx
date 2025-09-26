@@ -14,7 +14,8 @@ export default function Inicio() {
     <div className="inicio-container">
       {/* Barra de navegación */}
       <div className="navbar">
-        <button className="nav-btn" onClick={() => navigate("/procesodesarrollosoft")}>← Procesos de Desarrollo. Soft</button>
+        <button className="nav-btn" onClick={() => navigate("/")}>← Inicio</button>
+        <button className="nav-btn" onClick={() => navigate("/procesodesarrollosoft")}>Procesos de Desarrollo. Soft</button>
         <button className="nav-btn">Gestion de Calidad. Soft</button>
         <button className="nav-btn">Recursos y Aprendizaje</button>
         <button className="nav-btn">Metodologia en detalle</button>

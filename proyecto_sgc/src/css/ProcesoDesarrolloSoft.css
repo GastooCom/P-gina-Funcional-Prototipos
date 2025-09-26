@@ -311,3 +311,23 @@ display: flex;
     order: -1; /* Pone el gráfico primero en mobile */
   }
 }
+
+/*Boton scroll arriba*/
+.btn-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+   background: linear-gradient(120deg, #6a0f1d, #23094b);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+.btn-arriba:hover {
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
+}
