@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Inicio from './components/Inicio';
 import ProcesoDesarrolloSoft from "./components/ProcesoDesarrolloSoft";
+import GestionCalidadSoft from './components/Gestion_de_calidad';
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/procesodesarrollosoft" element={<ProcesoDesarrolloSoft />}/>
-        {/*
+        
         <Route path="/gestioncalidadsoft" element={<GestionCalidadSoft />} />
-        <Route path="/procesodesarrollosoft" element={<ProcesoDesarrolloSoft />}/>
+        {/*<Route path="/procesodesarrollosoft" element={<ProcesoDesarrolloSoft />}/>
         <Route path="/recursosaprendizaje" element={<RecursosAprendizaje />} />
         <Route path="/metodologiadetalle" element={<MetodologiaDetalle />} />
         */}

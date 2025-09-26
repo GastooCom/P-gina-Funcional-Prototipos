@@ -1,0 +1,127 @@
+/* ===== Fondo general ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(70deg, #002271, #031338, #cd0000, #ffffff);
+  min-height: 100vh;
+  color: white;
+}
+
+/* ===== Contenedor general ===== */
+.fundamentos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px;
+  gap: 50px;
+}
+
+/* ===== Títulos principales ===== */
+.fundamentos-container h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* ===== Subtítulos ===== */
+.titulo {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* ===== Paneles generales (Fundamentos y Técnicas) ===== */
+.panel {
+  flex: 1;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  min-width: 300px;
+}
+
+.panel.izquierdo {
+  background: linear-gradient(160deg, #1c2741, #0d1528);
+}
+
+.panel.derecho {
+  background: linear-gradient(160deg, #e04e4e, #b91c1c);
+}
+
+/* ===== Secciones (Técnicas de aseguramiento) ===== */
+.section {
+  background: linear-gradient(160deg, #1c2741, #0d1528);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* ===== Bloques de Herramientas ===== */
+.bloque {
+  flex: 1;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+
+.bloque.desarrollo {
+  background: linear-gradient(160deg, #1c2741, #0d1528);
+}
+
+.bloque.gestion {
+  background: linear-gradient(160deg, #e04e4e, #b91c1c);
+}
+
+.bloque.recursos {
+  background: linear-gradient(160deg, #1c2741, #0d1528);
+}
+
+.bloque.metodologia {
+  background: linear-gradient(160deg, #e04e4e, #b91c1c);
+}
+
+/* ===== Textos dentro de cajas ===== */
+.panel ul, .section ul, .bloque ul {
+  list-style: none;
+  padding: 0;
+}
+
+.panel li, .section li, .bloque li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.panel strong, .section strong, .bloque strong {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.panel p, .section p, .bloque p {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #d9d9d9;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .fundamentos-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .fundamentos-container h1 {
+    font-size: 2rem;
+  }
+
+  .panel, .section, .bloque {
+    width: 100%;
+  }
+}
