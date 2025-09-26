@@ -14,8 +14,10 @@ export default function Inicio() {
     <div className="inicio-container">
       {/* Barra de navegación */}
       <div className="navbar">
+        <button className="nav-btn" onClick={() => navigate("/")}>← Inicio</button>
         <button className="nav-btn" onClick={() => navigate("/procesodesarrollosoft")}>← Procesos de Desarrollo. Soft</button>
-        <button className="nav-btn"onClick={() => navigate("/gestioncalidadsoft")}>Gestion de Calidad. Soft</button>
+        <button className="nav-btn"onClick={() => navigate("/gestioncalidadsoft")}>Gestion de Calidad. Soft</button>       
+        <button className="nav-btn">Gestion de Calidad. Soft</button>
         <button className="nav-btn">Recursos y Aprendizaje</button>
         <button className="nav-btn">Metodologia en detalle</button>
         <button className="nav-btn">Adicionales →</button>
@@ -50,7 +52,7 @@ export default function Inicio() {
             Este es un conjunto de actividades estructuradas que se siguen para
             crear, mantener y mejorar sistemas de software.
           </p>
-          <p className="enlace">Enlace2___________</p>
+          <button className="enlace" onClick={() => navigate("/procesodesarrollosoft")}>Enlace1: Proceso de Desarrollo de Software</button>
           </div>
           <div className="imageni">
           <img src={imagen1} alt="Imagen" width={150}/>

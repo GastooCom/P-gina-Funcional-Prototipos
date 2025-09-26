@@ -2,7 +2,7 @@
   background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
   color: white;
   font-family: Arial, sans-serif;
-  min-height: 100vh;
+  min-height:350vh;
   padding: 20px;
 }
 
@@ -31,6 +31,10 @@ display: flex;
   border-radius: 20px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.nav-btn.p{
+  background-color: #cd0000;
 }
 
 /* Contenido */
@@ -149,4 +153,181 @@ display: flex;
   font-size: 20px;
   font-weight: bold;
   color: white;
+}
+
+/*Historia de usuario número: */
+/* ========================= */
+/* Metodologías Ágiles */
+/* ========================= */
+
+.metodologias-container {
+  max-width: 1500px;
+  margin: 100px auto 50px auto;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.metodologias-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center
+} 
+
+/* Grid de contenido */
+.content-grid {
+ display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center
+}
+
+/* Gráfico de barras */
+.grafico-box {
+  background: rgba(20, 20, 40, 0.7);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grafico {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+
+.grafico .barra {
+  width: 35px;
+  border-radius: 8px;
+}
+
+.barra.amarilla {
+  height: 40px;
+  background: #f1c40f;
+}
+.barra.naranja {
+  height: 100px;
+  background: #e67e22;
+}
+.barra.gris {
+  height: 70px;
+  background: #7f8c8d;
+}
+.barra.azul {
+  height: 130px;
+  background: #2980b9;
+}
+
+.metodologias-container h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.metodologias-container ul {
+    padding-left: 25px;
+}
+
+.metodologias-container li {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.metodologias-container p{
+  font-size: 2rem;
+}
+
+.metodologias-box{
+  margin-bottom: 50px;
+}
+
+.titulo-metodologias{
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
+  height: 250px;
+  width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-metodologias h1{
+  font-size: 3.5rem;
+}
+
+.scrum {
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
+  width: 700px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrum ul{
+  list-style-position: inside; /* hace que el punto quede más cerca del texto */
+  padding-left: 0;            /* elimina espacio extra */
+  margin-left:-200px;
+}
+
+.scrum h2{
+  margin-left: -500px
+}
+
+.xp {
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kanban {
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
+  width: 400px;
+  height:500px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+@media (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grafico-box {
+    order: -1; /* Pone el gráfico primero en mobile */
+  }
+}
+
+/*Boton scroll arriba*/
+.btn-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+   background: linear-gradient(120deg, #6a0f1d, #23094b);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+.btn-arriba:hover {
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
 }

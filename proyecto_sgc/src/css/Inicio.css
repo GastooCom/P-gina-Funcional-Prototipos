@@ -18,6 +18,7 @@
   background-color: #024b82;
   color: white;
   font-weight: bold;
+  font-size: 1.4rem;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -99,6 +100,8 @@
 .enlace {
   margin-top: 20px;
   font-weight: bold;
+  color: #fff;
+  background-color: transparent;
 }
 
 .card-icon {
