@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Inicio from './components/Inicio';
 import ProcesoDesarrolloSoft from "./components/ProcesoDesarrolloSoft";
-import GestionCalidadSoft from './components/Gestion_de_calidad';
+import GestionCalidadSoft from './components/GestionCalidadSoft';
 
 function App() {
   return (

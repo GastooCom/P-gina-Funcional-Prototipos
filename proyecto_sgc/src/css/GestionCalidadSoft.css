@@ -1,0 +1,93 @@
+/* ===== Fondo general ===== */
+
+.pds-container {
+  background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height:350vh;
+  padding: 20px;
+}
+
+/*
+.caja-pds{
+  display:block;
+display: flex;  
+  justify-content: center;
+  width: 1200px;
+}
+*/
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background-color: #024b82;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-btn.g{
+  background-color: #cd0000;
+}
+
+.fundamentos-container{
+  max-width: 1500px;
+  margin: auto;
+}
+
+.fundamentos-container h1{
+  font-size: 3.5rem;
+}
+
+.fundamentos-container h2{
+  font-size: 2.3rem;
+}
+
+.fundamentos-container p{
+  font-size: 30px;
+}
+
+.fundamentos-container li{
+  font-size: 30px;
+}
+
+.fundamentos-content{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.fundamentos-div-left{
+  flex: 1;
+  max-width: 700px;
+  border-radius: 12px;
+  padding: 20px;
+  line-height: 1.6;
+  background: rgba(4, 0, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.fundamentos-div-right{
+  flex: 1;
+  max-width: 700px;
+  border-radius: 12px;
+  padding: 20px;
+  line-height: 1.6;
+  background: rgba(79, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.imagen6{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

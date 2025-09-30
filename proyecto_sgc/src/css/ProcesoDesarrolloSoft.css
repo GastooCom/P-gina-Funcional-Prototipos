@@ -246,7 +246,7 @@ display: flex;
 }
 
 .titulo-metodologias{
-  background: linear-gradient(120deg, #6a0f1d, #23094b);
+  background: linear-gradient(120deg, #2c0d22, #342a59);
   height: 250px;
   width: 600px;
   padding: 20px;
@@ -260,7 +260,7 @@ display: flex;
 }
 
 .scrum {
-  background: linear-gradient(120deg, #6a0f1d, #23094b);
+  background: linear-gradient(120deg, #2c0d22, #342a59);
   width: 700px;
   height: 250px;
   padding: 20px;
@@ -280,7 +280,7 @@ display: flex;
 }
 
 .xp {
-  background: linear-gradient(120deg, #6a0f1d, #23094b);
+  background: linear-gradient(120deg, #2c0d22, #342a59);
   width: 400px;
   height: 500px;
   padding: 20px;
