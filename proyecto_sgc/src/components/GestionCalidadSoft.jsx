@@ -66,6 +66,74 @@ const GestionCalidadSoft = () => {
         </div>
       </div>
     </div>
+
+    <div className="tecnicas-container">
+      <div className="tecnicas-titulo">
+          <h1>Técnicas de Aseguramiento de la Calidad</h1>
+        </div>
+      <div className="tecnicas-div-superior">
+        <div className="tiposprueba">
+          <h2>Tipos de prueba de Software</h2>
+          <p><b>Se clasifican según el objetivo que persiguen:</b></p>
+
+          <h3>1. Pruebas funcionales</h3>
+          <ul>
+            <li>Verifican que el sistema cumpla con los requisitos definidos.</li>
+            <li><b>Ejemplos:</b> pruebas de unidad, integración, sistema, aceptación, regresión.</li>
+          </ul>
+
+          <h3>2. Pruebas no funcionales</h3>
+          <ul>
+            <li>Evalúan características como rendimiento, seguridad o usabilidad.</li>
+            <li><b>Ejemplos:</b> pruebas de carga, estrés, escalabilidad, seguridad, compatibilidad.</li>
+          </ul>
+
+          <h3>3. Pruebas de mantenimiento</h3>
+          <ul>
+            <li>Se realizan después de cambios en el software.</li>
+            <li><b>Ejemplos:</b> pruebas de regresión, pruebas de confirmación (retest).</li>
+          </ul>
+        </div>
+        <div className="nivelesprueba">
+          <h2>Niveles de Prueba</h2>
+          <ul>
+            <li><b>Pruebas de unidad</b><br/>Validan módulos o componentes individuales del código.</li>
+            <li><b>Pruebas de integración</b><br/>Verifican que los módulos funcionen correctamente al interactuar entre sí.</li>
+            <li><b>Pruebas de sistema</b><br/>Evalúan el software completo como un todo.</li>
+            <li><b>Pruebas de aceptación</b><br/>Confirman si el sistema cumple los requisitos del cliente y está listo para usarse.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="tenicas-div-inferior">
+        <div className="cajascolores">
+           <ol>
+          <li>
+            <b>Caja blanca (estructurales)</b>
+            <ul>
+              <li>Se centran en la lógica interna del código.</li>
+              <li><b>Ejemplos:</b> cobertura de sentencias, cobertura de decisiones, caminos lógicos.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Caja negra (funcionales)</b>
+            <ul>
+              <li>Se basan en las entradas y salidas sin mirar el código.</li>
+              <li><b>Ejemplos:</b> partición de equivalencia, valores límite, tablas de decisión, pruebas de casos de uso.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Caja gris (mixtas)</b>
+            <ul>
+              <li>Combinan elementos de caja blanca y negra.</li>
+              <li>Útiles cuando el probador conoce parcialmente la estructura interna.</li>
+            </ul>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </div>
     </div>
   );
 };
