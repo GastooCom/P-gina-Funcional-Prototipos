@@ -2,9 +2,29 @@ import React from 'react';
 import '../css/GestionCalidadSoft.css';
 import imagen6 from "../imagenes/imagen6.png";
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from "react";
 
 const GestionCalidadSoft = () => {
   const navigate = useNavigate();
+
+  const [mostrarBoton, setMostrarBoton] = useState(false);
+
+  useEffect(() => {
+    const manejarScroll = () => {
+      if (window.scrollY > 300) {
+        setMostrarBoton(true);
+      } else {
+        setMostrarBoton(false);
+      }
+    };
+
+    window.addEventListener("scroll", manejarScroll);
+    return () => window.removeEventListener("scroll", manejarScroll);
+  }, []);
+
+  const irArriba = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="pds-container">
@@ -134,6 +154,62 @@ const GestionCalidadSoft = () => {
         </div>
       </div>
     </div>
+
+    <div className="herramientas-container">
+      <div className="herramientas-columna1">
+        <div className="herramientas-div">
+          <div className="herramientas-titulo">
+            <h1>Herramientas de Calidad</h1>
+          </div>
+          <p>
+            Aplicaciones o plataformas que apoyan a los equipos en la verificación,
+            validación y mejora continua del producto.
+          </p>
+          <p>
+            Su objetivo principal es detectar errores de forma temprana, garantizar la trazabilidad de defectos y medir la calidad del código para entregar software confiable y eficiente.
+          </p>
+        </div>
+        <div className="herramientas-div2">
+          <h2>Herramientas de gestión de pruebas</h2>
+          <p>
+            Aplicaciones que permiten planificar, diseñar, ejecutar y documentar pruebas de software.
+          </p>
+          <p>
+            Con ellas, los equipos pueden asegurar que las funcionalidades cumplen con los requisitos y que no se introducen errores en nuevas versiones.
+          </p>
+        </div>
+      </div>
+      <div className="herramientas-columna2">
+        <h2>Seguimiento de defectos</h2>
+          <p>
+            Son sistemas que facilitan el registro, priorización, asignación y monitoreo de los defectos encontrados en el software.
+          </p>
+          <p>
+            Ayudan a organizar el flujo de trabajo cuando aparecen bugs, evitando que queden sin resolver.
+          </p>
+          <p>
+            <b>Ejemplo:</b> Jira → muy popular en entornos ágiles, permite gestionar defectos y tareas.
+          </p>
+      </div>
+      <div className="herramientas-columna3">
+        <h2>Análisis de calidad</h2>
+          <p>
+            Son programas que realizan un análisis estático o dinámico del código fuente, evaluando su estructura, seguridad y mantenibilidad.
+          </p>
+          <p>
+            Se enfocan en la calidad técnica, reduciendo la deuda técnica y fomentando buenas prácticas.
+          </p>
+          <p>
+            <b>Ejemplos:</b> SonarQube → analiza métricas como complejidad, duplicaciones y seguridad.
+          </p>
+      </div>
+    </div>
+         {/* Botón Scroll to Top */}
+      {mostrarBoton && (
+        <button className="btn-arriba" onClick={irArriba}>
+          ⬆
+        </button>
+      )}
     </div>
   );
 };
