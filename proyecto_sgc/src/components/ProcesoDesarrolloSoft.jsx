@@ -1,6 +1,8 @@
 import "../css/ProcesoDesarrolloSoft.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import modelov from "../imagenes/modeloenv.png";
+import modeloincremental from "../imagenes/modeloincremental.png";
 
 export default function ProcesoDesarrolloSoft() {
   const navigate = useNavigate();
@@ -41,66 +43,63 @@ export default function ProcesoDesarrolloSoft() {
       <div className="contenido">
         <h1>Ciclo de Vida del Desarrollo de Software</h1>
         <p>
-          El <b>SDLC (Software Development Life Cycle)</b> describe las etapas
-          que sigue un proyecto de software, desde la concepción de la idea
-          hasta su mantenimiento en producción. Su objetivo es organizar y
-          controlar el desarrollo para asegurar calidad y cumplimiento de
-          requisitos.
+          El Ciclo de Vida del Desarrollo de Software (SDLC) es un conjunto de etapas que guían la creación de un producto de software desde su concepción hasta su mantenimiento.
+          Su propósito es organizar el trabajo, reducir riesgos y asegurar la calidad del producto final, proporcionando un marco claro para el equipo de desarrollo.
         </p>
 
         <h2>Etapas principales:</h2>
         <ol className="lista-etapas">
           <li>
-            <span className="rojo">Recolección de requisitos:</span> Análisis de
-            lo que el cliente necesita.
+            <span className="rojo">Recolección y análisis de requisitos:</span> 
+            Comprensión profunda de las necesidades del cliente.
           </li>
           <li>
             <span className="rojo">Diseño:</span> Definición de la arquitectura,
-            modelos y especificaciones técnicas.
+            interfaces y componentes del sistema.
           </li>
           <li>
-            <span className="rojo">Implementación (codificación):</span>{" "}
-            Desarrollo del software según el diseño.
+            <span className="rojo">Desarrollo o implementación:</span>{" "}
+            Programación del código fuente y construcción de las funcionalidades.
           </li>
           <li>
-            <span className="rojo">Pruebas:</span> Validación del sistema para
-            garantizar que funciona correctamente.
+            <span className="rojo">Pruebas:</span> 
+            Verificación y validación para detectar defectos antes de la entrega.
           </li>
           <li>
-            <span className="rojo">Implementación/Despliegue:</span> Entrega y
-            puesta en producción del software.
+            <span className="rojo">Despliegue:</span>
+            Puesta en producción del software para su uso real.
           </li>
           <li>
-            <span className="rojo">Mantenimiento:</span> Corrección de errores,
-            mejoras y adaptaciones futuras.
+            <span className="rojo">Mantenimiento:</span>
+            Corrección de errores posteriores, actualizaciones y mejoras continuas.
+            El SDLC permite aplicar modelos de gestión (como cascada, incremental o ágil) para adaptarse a diferentes tipos de proyectos y niveles de complejidad
           </li>
         </ol>
       </div>
+      <div className="container-todos-modelos">
       <div className="cascada-container">
       {/* Texto descriptivo */}
       <div className="texto">
         <h1>Modelos tradicionales</h1>
         <p>
-          Los modelos tradicionales se caracterizan por ser más estructurados y
-          secuenciales, adecuados en contextos donde los requisitos son claros y
-          poco cambiantes.
+          Los Modelos Tradicionales del SDLC proporcionan un enfoque estructurado y secuencial para el desarrollo de software.
+          Entre los más utilizados se encuentran:
+
         </p>
 
         <h2>Modelo en cascada</h2>
         <ul>
           <li>
-            <b>Características:</b> secuencia rígida de fases (requisitos →
-            diseño → implementación → pruebas → despliegue → mantenimiento).
+            <b>Descripción:</b> Sigue una secuencia lineal de etapas (requisitos → diseño → desarrollo → pruebas → mantenimiento)..
           </li>
           <li>
-            <b>Ventajas:</b> simple, fácil de entender, adecuado para proyectos
-            pequeños y bien definidos.
+            <b>Ventajas:</b> Claridad en cada fase, ideal para proyectos con requisitos bien definidos y sin cambios frecuentes.
           </li>
           <li>
-            <b>Desventajas:</b> poca flexibilidad, cambios tardíos son costosos.
+            <b>Desventajas:</b> Poca flexibilidad ante cambios, errores detectados tarde pueden ser costosos.
           </li>
           <li>
-            <b>Cuándo usarlo:</b> proyectos con requisitos estables.
+            <b>Uso recomendado:</b> Proyectos gubernamentales, entornos regulados o sistemas críticos donde los requisitos son estables.
           </li>
         </ul>
       </div>
@@ -122,6 +121,74 @@ export default function ProcesoDesarrolloSoft() {
            </div>
       </div>
 
+      <div className="modelos-container">
+        <div className="modelov">
+          <img src={modelov} alt="Modelo en V" width={700}/>
+        </div>
+      {/* Texto descriptivo */}
+      <div className="texto">
+        <h2>Modelo en V</h2>
+        <ul>
+          <li>
+            <b>Descripción:</b> Extiende el modelo en cascada, enfatizando la verificación y validación en cada fase. Cada etapa de desarrollo tiene su prueba asociada.
+          </li>
+          <li>
+            <b>Ventajas:</b> Detección temprana de errores, asegura calidad en proyectos críticos.
+          </li>
+          <li>
+            <b>Desventajas:</b> Requiere alta planificación y documentación.
+          </li>
+          <li>
+            <b>Uso recomendado:</b> Sistemas médicos, aeronáuticos o bancarios.
+          </li>
+        </ul>
+      </div>
+      </div>
+    
+      <div className="modelos-container2">
+         <div className="texto">
+        <h2>Modelo Incremental</h2>
+        <ul>
+          <li>
+            <b>Descripción:</b> El software se construye en módulos funcionales que se entregan en varias iteraciones.
+          </li>
+          <li>
+            <b>Ventajas:</b> Entrega temprana de partes utilizables, flexibilidad para incorporar cambios.
+          </li>
+          <li>
+            <b>Desventajas:</b> Requiere una arquitectura bien planificada para integrar los incrementos.
+          </li>
+          <li>
+            <b>Uso recomendado:</b> Aplicaciones comerciales, plataformas web en crecimiento.
+          </li>
+        </ul>
+      </div>
+      <div className="modeloincremental">
+          <img src={modeloincremental} alt="Modelo Incremental" width={700}/>
+        </div>
+      </div>
+      <div className="modelos-container3">
+       <div className="texto">
+        <h2>Modelo Iterativo</h2>
+        <ul>
+          <li>
+            <b>Descripción:</b> : Se desarrollan versiones sucesivas del sistema, cada una más completa, permitiendo ajustes continuos.
+          </li>
+          <li>
+            <b>Ventajas:</b> Permite retroalimentación temprana, reduce riesgos.
+          </li>
+          <li>
+            <b>Desventajas:</b> Puede requerir más recursos y tiempo si los cambios son constantes.
+          </li>
+          <li>
+            <b>Uso recomendado:</b> Proyectos donde los requisitos no están completamente definidos.
+          </li>
+        </ul> 
+        </div>
+      </div>
+      
+      </div>
+
 
     {/* ===================== */}
     {/* Metodologías Ágiles */}
@@ -132,18 +199,17 @@ export default function ProcesoDesarrolloSoft() {
       <div className="titulo-metodologias">
         <h1>Metodologías Ágiles</h1>
         <p>
-          Principios del Manifiesto Ágil <br />
-          (valores y principios básicos).
+          Las Metodologías Ágiles surgen como respuesta a la rigidez de los modelos tradicionales. Su objetivo es adaptarse al cambio, entregar valor de forma continua y fomentar la colaboración entre equipos y clientes.
         </p>
       </div>
         {/* SCRUM */}
         <div className="scrum">
           <h2>SCRUM</h2>
           <ul>
-            <li><b>Principios:</b> iteraciones, entregas incrementales...</li>
-            <li><b>Roles:</b> Product Owner, Scrum Master, Equipo...</li>
-            <li><b>Ceremonias:</b> Sprint Planning, Daily Scrum...</li>
-            <li><b>Artefactos:</b> Product Backlog, Sprint Backlog...</li>
+            <li><b>Principios:</b> Desarrollo iterativo e incremental en ciclos cortos llamados Sprints (1 a 4 semanas).</li>
+            <li><b>Roles:</b> Product Owner (define prioridades), Scrum Master (facilita procesos) y Equipo de Desarrollo (construye el producto).</li>
+            <li><b>Ceremonias:</b> Sprint Planning (planificación), Daily Scrum (reunión diaria), Sprint Review (revisión de resultados) y Retrospective (mejora del proceso).</li>
+            <li><b>Artefactos:</b> Product Backlog (lista de requisitos), Sprint Backlog e Incremento (entregable funcional).</li>
           </ul>
         </div>
       </div>
@@ -164,8 +230,8 @@ export default function ProcesoDesarrolloSoft() {
           <h2>Extreme Programming (XP)</h2>
           <ul>
             <li><b>Principios:</b> simplicidad, comunicación...</li>
-            <li><b>Prácticas:</b> programación en pareja, TDD...</li>
-            <li><b>Beneficios:</b> calidad de código, menos errores...</li>
+            <li><b>Prácticas destacadas:</b> Programación en parejas (pair programming), integración continua, desarrollo guiado por pruebas (TDD) y refactorización constante.</li>
+            <li><b>Beneficios:</b> Calidad del código y satisfacción del cliente.</li>
           </ul>
         </div>
 
@@ -173,9 +239,9 @@ export default function ProcesoDesarrolloSoft() {
         <div className="kanban">
           <h2>Kanban</h2>
           <ul>
-            <li><b>Principios:</b> visualizar flujo, limitar WIP...</li>
-            <li><b>Elementos:</b> tablero, tarjetas, columnas...</li>
-            <li><b>Beneficios:</b> flexibilidad, eficiencia...</li>
+            <li><b>Principios:</b> Gestión visual del flujo de trabajo mediante tableros con columnas (Por hacer → En progreso → Hecho).</li>
+            <li><b>Prácticas clave:</b> Limitar el trabajo en progreso (WIP), mejorar el flujo de tareas y eliminar cuellos de botella</li>
+            <li><b>Beneficio principal:</b> Flexibilidad para aceptar cambios en cualquier momento.</li>
           </ul>
         </div>
       </div>

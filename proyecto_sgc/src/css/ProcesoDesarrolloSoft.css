@@ -78,6 +78,12 @@ display: flex;
 
 /*Historia de usuario número: */
 
+.container-todos-modelos{
+  min-width: 1500px;
+  display: flex;
+  flex-direction: column;
+}
+
 .cascada-container {
   align-items: center;
   justify-content: space-around;
@@ -92,6 +98,58 @@ display: flex;
   align-items: flex-start;
   margin: auto;
   text-align: left;
+}
+
+.modelos-container {
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: auto;
+  text-align: left;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  text-align: left;
+}
+
+.modelos-container2 {
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: -150px;
+  text-align: left;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.modelos-container3 {
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: -250px;
+  text-align: left;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.modelov{
+  margin-right: 50px;
 }
 
 /* Texto */
@@ -168,6 +226,7 @@ display: flex;
 }
 
 .metodologias-box{
+  margin-top: -300px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -238,7 +297,7 @@ display: flex;
 }
 
 .metodologias-container p{
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .metodologias-box{
@@ -247,7 +306,7 @@ display: flex;
 
 .titulo-metodologias{
   background: linear-gradient(120deg, #2c0d22, #342a59);
-  height: 250px;
+  height: 300px;
   width: 600px;
   padding: 20px;
   border-radius: 15px;
@@ -262,21 +321,11 @@ display: flex;
 .scrum {
   background: linear-gradient(120deg, #2c0d22, #342a59);
   width: 700px;
-  height: 250px;
+  height: 300px;
   padding: 20px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-}
-
-.scrum ul{
-  list-style-position: inside; /* hace que el punto quede más cerca del texto */
-  padding-left: 0;            /* elimina espacio extra */
-  margin-left:-200px;
-}
-
-.scrum h2{
-  margin-left: -500px
 }
 
 .xp {
