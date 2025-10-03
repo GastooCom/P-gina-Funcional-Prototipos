@@ -1,0 +1,256 @@
+.pds-container {
+  background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height:400vh;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background-color: #024b82;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-btn.r{
+  background-color: #cd0000;
+}
+
+.glosario-container{
+  max-width: 1500px;
+  margin: auto;
+}
+
+.glosario-container h1{
+  font-size: 3.5rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.glosario-container p{
+  font-size: 30px;
+}
+
+.glossary-search {
+  width: 40%;              /* más chico */
+  padding: 10px;
+  margin: 0 auto 20px;      /* centrado horizontal + separación abajo */
+  display: block;           /* necesario para que margin auto funcione */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;       /* opcional: texto centrado en el input */
+}
+
+.glossary-list {
+  list-style: none;
+  padding: 0;
+}
+
+.glossary-item {
+  background: white;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  color: #222;
+}
+
+.glossary-term {
+  color: #b30000; /* Rojo fuerte para resaltar el término */
+  font-weight: bold;
+}
+
+.glossary-no-results {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.glosario-container h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.recursosaprendizaje-preguntas {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.preguntas-frecuentes  li {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.recursosaprendizaje-preguntas strong {
+  color: #f8f8f8;
+}
+
+.recursosaprendizaje-preguntas p { 
+  font-size: 15px;
+  margin: 5px 0 0 0;
+  color: #dddddd;
+}
+
+.recursosaprendizaje-preguntas ul {
+  font-size: 15px;
+  margin-top: 8px;
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.enlaces-interes{
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.enlaces-interes-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.icon-enlace{
+    margin-left: 350px;
+}
+
+.icon-enlace2{
+    margin-right: 350px;
+}
+
+.enlaces-interes-desc{
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.enlaces-interes h1{
+  font-size: 3.5rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.enlaces-interes h2{
+  font-size: 2rem;
+}
+
+.enlaces-interes p{
+  font-size: 30px;
+}
+
+.enlaces-interes li{
+  font-size: 30px;
+}
+
+.enlaces-interes-div a{
+    color: white;
+    text-decoration: none;
+}
+
+.enlaces-interes-div a:hover{
+    color: #cd0000;
+    text-decoration: none;
+}
+
+.enlaces-interes-div{
+  max-width: 1300px;
+  height: 500px;
+  border-radius: 12px;
+  padding: 20px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  backdrop-filter: blur(8px);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.ejercicioscasos-container{
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.ejercicioscasos-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.ejercicioscasos-container h1{
+  font-size: 3.5rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.ejercicioscasos-container p{
+  font-size: 25px;
+}
+
+.ejercicioscasos-container li{
+  font-size: 25px;
+}
+
+.ejercicioscasos-box{
+    display: flex;
+    justify-content: center;
+}
+
+.ejercicioscasos-div1{
+  width: 650px;
+  height: 700px;
+  border-radius: 12px;
+  padding: 20px;
+  line-height: 2;
+  background: rgba(79, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.ejercicioscasos-div2{
+  width: 650px;
+  height: 700px;
+  border-radius: 12px;
+  padding: 20px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  backdrop-filter: blur(8px);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 50px;
+  flex-direction: column;
+}
