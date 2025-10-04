@@ -306,7 +306,7 @@ display: flex;
 
 .titulo-metodologias{
   background: linear-gradient(120deg, #2c0d22, #342a59);
-  height: 300px;
+  height: 325px;
   width: 600px;
   padding: 20px;
   border-radius: 15px;
@@ -321,7 +321,7 @@ display: flex;
 .scrum {
   background: linear-gradient(120deg, #2c0d22, #342a59);
   width: 700px;
-  height: 300px;
+  height: 325px;
   padding: 20px;
   border-radius: 15px;
   display: flex;
@@ -346,6 +346,29 @@ display: flex;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+}
+
+.graficos {
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: auto;
+  text-align: left;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.agile{
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+  align-items: center;
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
+  width: 750px;
+  height:500px;
 }
 
 /* ========================= */

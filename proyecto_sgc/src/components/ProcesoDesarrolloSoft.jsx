@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import modelov from "../imagenes/modeloenv.png";
 import modeloincremental from "../imagenes/modeloincremental.png";
+import agile from "../imagenes/metodologiaagile.png";
+import scrum from "../imagenes/graficoscrum.png";
 
 export default function ProcesoDesarrolloSoft() {
   const navigate = useNavigate();
@@ -215,14 +217,8 @@ export default function ProcesoDesarrolloSoft() {
       </div>
         <div className="content-grid">
         {/* Imagen de gráfico */}
-        <div className="grafico-box">
-          <div className="grafico">
-            <div className="barra amarilla"></div>
-            <div className="barra naranja"></div>
-            <div className="barra gris"></div>
-            <div className="barra azul"></div>
-            <div className="linea"></div>
-          </div>
+        <div className="scrumgrafico">
+          <img src={scrum} alt="Scrum gráfico" width={500}/>
         </div>
 
         {/* XP */}
@@ -245,7 +241,14 @@ export default function ProcesoDesarrolloSoft() {
           </ul>
         </div>
       </div>
+       <div className="graficos">
+        <div className="agile">
+          <img src={agile} alt="Metodologia agile" width={700}/>
+        </div>
+  
+        </div>
     </div>
+
      {/* Botón Scroll to Top */}
       {mostrarBoton && (
         <button className="btn-arriba" onClick={irArriba}>
