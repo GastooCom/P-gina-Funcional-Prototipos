@@ -88,7 +88,7 @@ export default function Inicio() {
                 presupuesto) y el aprendizaje es la mejora continua mediante
                 capacitación y experiencia para perfeccionar procesos y resultados.
             </p>
-            <p className="enlace">Enlace1___________</p>
+            <button className="enlace" onClick={() => navigate("/recursosaprendizaje")}>Enlace3: Recursos y Aprendizaje</button>
             </div>
             <div className="imagen3">
             <img src={imagen3} alt="Imagen3" width={150}/>
