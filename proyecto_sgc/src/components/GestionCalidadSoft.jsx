@@ -47,19 +47,19 @@ const GestionCalidadSoft = () => {
       <div className="fundamentos-content">
         {/* Sección izquierda */}
         <div className="fundamentos-div-left">
+          <h2>Explicación:</h2>
+          <ul>
+            <li>
+              <strong>Fundamentos:</strong> Los fundamentos de calidad en software se apoyan en normas internacionales como ISO/IEC 9126 y ISO/IEC 25000 (SQuaRE).
+            </li>
+          </ul>
           <h2>Estándares internacionales:</h2>
           <ul>
             <li>
-              <strong>ISO/IEC 9126:</strong> define un modelo de calidad de
-              software basado en características como funcionalidad,
-              confiabilidad, usabilidad, eficiencia, mantenibilidad y
-              portabilidad.
+              <strong>Calidad interna:</strong> Mide aspectos técnicos como arquitectura, código fuente, complejidad o seguridad.
             </li>
             <li>
-              <strong>ISO/IEC 25000 (SQuaRE):</strong> evolución de la ISO 9126,
-              proporciona un marco más amplio para la evaluación de la calidad,
-              estableciendo guías para medir tanto la calidad interna (código y
-              diseño) como la calidad externa (experiencia del usuario).
+              <strong>Calidad externa:</strong> Evalúa la experiencia del usuario final (rendimiento, usabilidad, confiabilidad).
             </li>
           </ul>
         </div>
@@ -73,10 +73,10 @@ const GestionCalidadSoft = () => {
             no funcionales, así como con las expectativas del usuario.
           </p>
 
-          <h2>Métricas</h2>
+          <h2>Métricas comunes</h2>
           <p>
-            Indicadores cuantitativos que permiten medir características como
-            confiabilidad, mantenibilidad, eficiencia o usabilidad.
+            Densidad de defectos, cobertura de pruebas, MTBF (tiempo medio entre fallos).
+             Esto permite un marco objetivo para evaluar si el software cumple con las expectativas y estándares definidos.
           </p>
 
         </div>
@@ -117,10 +117,12 @@ const GestionCalidadSoft = () => {
         <div className="nivelesprueba">
           <h2>Niveles de Prueba</h2>
           <ul>
-            <li><b>Pruebas de unidad</b><br/>Validan módulos o componentes individuales del código.</li>
-            <li><b>Pruebas de integración</b><br/>Verifican que los módulos funcionen correctamente al interactuar entre sí.</li>
-            <li><b>Pruebas de sistema</b><br/>Evalúan el software completo como un todo.</li>
-            <li><b>Pruebas de aceptación</b><br/>Confirman si el sistema cumple los requisitos del cliente y está listo para usarse.</li>
+            <li><b>Pruebas unitarias</b><br/>Verifican cada componente de forma aislada.</li>
+            <li><b>Pruebas de integración</b><br/>validan la interacción entre módulos</li>
+            <li><b>Pruebas de sistema</b><br/>Comprueban el comportamiento global.</li>
+            <li><b>Pruebas de aceptación</b><br/>Confirman que el producto cumple lo solicitado por el cliente.</li>
+            <li><b>Pruebas de seguridad</b><br/>Evalúan vulnerabilidades frente a ataques..</li>
+            <li><b>Automización</b><br/>Uso de frameworks como JUnit, Cypress, Selenium para acelerar y repetir pruebas automáticamente.</li>
           </ul>
         </div>
       </div>
@@ -170,37 +172,63 @@ const GestionCalidadSoft = () => {
           </p>
         </div>
         <div className="herramientas-div2">
-          <h2>Herramientas de gestión de pruebas</h2>
+          <h2>Jira (Atlassian)</h2>
           <p>
-            Aplicaciones que permiten planificar, diseñar, ejecutar y documentar pruebas de software.
+            Herramienta líder en gestión de proyectos ágiles y seguimiento de defectos.
           </p>
           <p>
-            Con ellas, los equipos pueden asegurar que las funcionalidades cumplen con los requisitos y que no se introducen errores en nuevas versiones.
+            Características principales:
+
+            Creación de historias de usuario, incidencias y tareas.
+
+            Flujos de trabajo personalizables.
+
+            Reportes de métricas y paneles en tiempo real.
+
+            Integración con GitHub, Confluence y CI/CD.
           </p>
         </div>
       </div>
       <div className="herramientas-columna2">
-        <h2>Seguimiento de defectos</h2>
+        <h2>Trello</h2>
           <p>
-            Son sistemas que facilitan el registro, priorización, asignación y monitoreo de los defectos encontrados en el software.
+            Sistema visual basado en tableros Kanban.
           </p>
           <p>
-            Ayudan a organizar el flujo de trabajo cuando aparecen bugs, evitando que queden sin resolver.
+            Características principales:
           </p>
           <p>
-            <b>Ejemplo:</b> Jira → muy popular en entornos ágiles, permite gestionar defectos y tareas.
+            Tableros con listas y tarjetas para organizar tareas
+          </p>
+          <p>
+            Etiquetas, fechas de vencimiento y asignación de responsables.
+          </p>
+          <p>
+            Integración con Slack, Google Drive y automatizaciones (Butler).
+          </p>
+          <p>
+            Ideal para equipos pequeños o proyectos educativos.
           </p>
       </div>
       <div className="herramientas-columna3">
-        <h2>Análisis de calidad</h2>
+        <h2>Selenium</h2>
           <p>
-            Son programas que realizan un análisis estático o dinámico del código fuente, evaluando su estructura, seguridad y mantenibilidad.
+            Framework de automatización de pruebas para aplicaciones web.
           </p>
           <p>
-            Se enfocan en la calidad técnica, reduciendo la deuda técnica y fomentando buenas prácticas.
+           Características principales:
           </p>
           <p>
-            <b>Ejemplos:</b> SonarQube → analiza métricas como complejidad, duplicaciones y seguridad.
+            Permite simular interacciones de usuario (clics, formularios, navegación).
+          </p>
+          <p>
+            Compatible con múltiples lenguajes (Java, Python, C#).
+          </p>
+          <p>
+            Integración con navegadores (Chrome, Firefox, Edge).
+          </p>
+          <p>
+            Escalable para pruebas en paralelo y regresión.
           </p>
       </div>
     </div>
