@@ -2,7 +2,7 @@
   background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
   color: white;
   font-family: Arial, sans-serif;
-  min-height:400vh;
+  height:700vh;
   padding: 20px;
 }
 
@@ -227,7 +227,7 @@
 
 .ejercicioscasos-div1{
   width: 650px;
-  height: 700px;
+  height: 1300px;
   border-radius: 12px;
   padding: 20px;
   line-height: 2;

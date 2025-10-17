@@ -286,18 +286,32 @@ const RecursosAprendizaje = () => {
         <div className="ejercicioscasos-div1">
             <ul>
             <li>
-              <strong>Ejercicio de Caja Negra:</strong> Diseña casos de prueba
-              para un campo de entrada que solo acepta edades entre 18 y 65 años.
+              <strong>Ejercicio de Caja Negra:</strong>
+              Diseña casos de prueba para un campo de entrada que solo acepte edades entre 18 y 65 años.
+              Casos válidos: 18, 30, 65.
+
+              Casos inválidos: 0, 17, 66, 100, texto (“veinte”).
+
+              Objetivo: Comprobar que el sistema valida correctamente los límites y el tipo de dato.
+
+              Resultado esperado: Solo las entradas dentro del rango permitido deben ser aceptadas.
             </li>
             <li>
-              <strong>Ejercicio de Caja Blanca:</strong> Dibuja un diagrama de
-              flujo de un algoritmo y determina los caminos independientes para
-              probarlo.
-            </li>
+              <strong>Ejercicio de Caja Blanca:</strong>
+              Dibuja un diagrama de flujo de un algoritmo simple (por ejemplo, cálculo de promedio de notas) e identifica los caminos independientes para probarlo.
+
+              Objetivo: Evaluar la lógica interna del código y asegurar que todas las rutas de ejecución sean cubiertas.
+
+              Pruebas recomendadas: condiciones IF/ELSE, bucles y posibles errores de división por cero.             </li>
             <li>
-              <strong>Ejercicio de Partición de Equivalencia:</strong> Divide en
-              clases de equivalencia el rango de entrada de un formulario que
-              recibe notas de 0 a 10.
+              <strong>Ejercicio de Partición de Equivalencia:</strong> 
+              Divide en clases de equivalencia el rango de entrada de un formulario que recibe notas de 0 a 10.
+
+              Clases válidas: 0–10 (numéricos).
+
+              Clases inválidas: menores que 0, mayores que 10, valores alfabéticos.
+
+              Objetivo: Reducir el número de pruebas necesarias sin perder cobertura funcional.
             </li>
           </ul>
            <div className="imagenr">
