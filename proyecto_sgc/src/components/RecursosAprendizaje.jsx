@@ -11,12 +11,21 @@ const RecursosAprendizaje = () => {
 
 
   const terms = [
-    { term: "Algoritmo", definition: "Conjunto de instrucciones ordenadas que resuelven un problema." },
-    { term: "Backend", definition: "Parte del software que maneja la lógica y acceso a datos." },
-    { term: "Componente", definition: "Bloque reutilizable en React que encapsula lógica y vista." },
-    { term: "DOM", definition: "Modelo de objetos del documento HTML que los navegadores interpretan." },
-    { term: "Frontend", definition: "Parte visual de una aplicación con la que interactúa el usuario." },
-    { term: "JSX", definition: "Extensión de JavaScript que permite escribir HTML dentro del código JS." },
+    { term: "Calidad de software", definition: " Grado en que un sistema cumple con requisitos y expectativas." },
+    { term: "Métrica", definition: "Valor numérico que mide atributos de calidad." },
+    { term: "Defecto", definition: "Error en el software que produce un resultado inesperado." },
+    { term: "Prueba unitaria", definition: "Validación de un módulo o función individual." },
+    { term: "Prueba de integración", definition: "Verificación de interacción entre componentes." },
+    { term: "Prueba de aceptación", definition: "Validación final del software frente al cliente." },
+    { term: "ISO 25000", definition: "Estándar internacional de medición de calidad." },
+    { term: "MTBF", definition: "Tiempo promedio entre fallos." },
+    { term: "Automatización", definition: "Ejecución automática de pruebas con herramientas." },
+    { term: "Backlog", definition: "Lista priorizada de requisitos o tareas en proyectos ágiles." },
+    { term: "Scrum", definition: "Marco de trabajo ágil basado en iteraciones cortas." },
+    { term: "Kanban", definition: "Método de gestión visual de tareas mediantte tableros." },
+    { term: "Defect density (densidad de defectos)", definition: "Número de errores por cada mil líneas de código." },
+    { term: "CI/CD", definition: "Integración y entrega continua." },
+    { term: "Refactorización", definition: "Mejora del código sin alterar su funcionalidad" },
   ];
 
   const [search, setSearch] = useState("");
@@ -93,51 +102,109 @@ const RecursosAprendizaje = () => {
         <li>
           <strong>¿Qué es la calidad de software?</strong>
           <p>
-            Es el conjunto de características que hacen que un software sea
-            confiable, usable, seguro y cumpla con los requisitos del cliente.
+            Es el grado en que un producto cumple con los requisitos funcionales y no funcionales,
+             asegurando confiabilidad, usabilidad, eficiencia y satisfacción del usuario.
           </p>
         </li>
 
         <li>
-          <strong>¿Por qué son necesarias las pruebas de software?</strong>
-          <p>
-            Porque permiten detectar errores antes de que el sistema llegue al
-            cliente, reduciendo costos y evitando fallos en producción.
-          </p>
+          <strong>¿Cuál es la diferencia entre calidad interna y externa?</strong>
+          <ul>
+            <li>
+            <strong>Interna:</strong> se centra en aspectos técnicos como código, mantenibilidad y arquitectura.
+            </li>
+            <li>
+          <strong>Externa:</strong> se percibe en la experiencia del usuario: facilidad de uso, rapidez, seguridad y estabilidad.
+          </li>
+          </ul>
         </li>
 
         <li>
           <strong>
-            ¿Cuál es la diferencia entre pruebas funcionales y no funcionales?
+            ¿Qué normas y modelos se utilizan para evaluar la calidad?
           </strong>
+          <p>
+            La más reconocida es ISO/IEC 25000 (SQuaRE). También se aplican métricas como MTBF (Mean Time Between Failures) para medir confiabilidad.
+          </p>
+        </li>
+
+        <li>
+          <strong>¿Qué es el SDLC?</strong>
+          <p>
+            El Ciclo de Vida del Desarrollo de Software (SDLC) describe las etapas del desarrollo: análisis, diseño, implementación, pruebas, despliegue y mantenimiento.
+          </p>
+        </li>
+
+        <li>
+          <strong>¿Cuál es la importancia de los modelos tradicionales (Cascada, V, Incremental e Iterativo)?</strong>
           <ul>
             <li>
-              <strong>Funcionales:</strong> verifican que el software cumpla con
-              lo que debe hacer.
+            <strong>Cascada:</strong> Ordenado y secuencial, bueno para proyectos con requisitos claros.
             </li>
             <li>
-              <strong>No funcionales:</strong> evalúan características como
-              rendimiento, seguridad, escalabilidad y usabilidad.
+            <strong>Modelo en V:</strong> Añade verificación y validación en paralelo.
+            </li>
+            <li>
+            <strong>Incremental/Iterativo</strong> Permiten entregas parciales, feedback temprano y flexibilidad.
             </li>
           </ul>
         </li>
 
         <li>
-          <strong>¿Qué significa V&amp;V en software?</strong>
+          <strong>¿Qué diferencia hay entre Scrum y Kanban?</strong>
+          <ul>
+            <li>
+            <strong>Scrum:</strong> Estructura en ciclos cortos, entregables definidos.
+            </li>
+            <li>
+          <strong>Kanban</strong> Flujo continuo, visualización del trabajo en tableros.
+          </li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>
+            ¿Qué es XP (Extreme Programming)?
+          </strong>
           <p>
-            <strong>Verificación:</strong> comprobar si el software está bien
-            construido. <br />
-            <strong>Validación:</strong> comprobar si el software cumple lo que
-            el cliente necesita.
+            Metodología que promueve TDD (Test Driven Development), programación en parejas, integración continua y refactorización.
           </p>
         </li>
 
         <li>
-          <strong>¿Qué son las pruebas de regresión?</strong>
+          <strong>
+            ¿Qué características tiene Trello?
+          </strong>
           <p>
-            Son pruebas repetidas tras modificaciones para verificar que el
-            cambio no haya introducido nuevos errores.
+            Es un tablero visual con tarjetas, ideal para aplicar Kanban en proyectos simples o personales.
           </p>
+        </li>
+
+        <li>
+          <strong>¿Qué es V&V en pruebas?</strong>
+          <ul>
+            <li>
+            <strong>Verificación:</strong> Se construyó correctamente el software?
+            </li>
+            <li>
+          <strong>Validación:</strong> ¿Se construyó el software correcto según lo que quería el cliente?
+          </li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>¿Dónde puedo aprender más sobre gestión de calidad de software?</strong>
+          <ul>
+            <li>
+            <strong>Sitios web:</strong> IEEE, ISTQB, ISO.org.
+            </li>
+            <li>
+          <strong>Herramientas:</strong> Jira, Trello, SonarQube, Selenium.
+          </li>
+           <li>
+          <strong>Cursos online:</strong> Coursera, Udemy, edX.
+          </li>
+          </ul>
         </li>
       </ol>
     </div>
@@ -159,10 +226,13 @@ const RecursosAprendizaje = () => {
                 <nav>
                 <ul>
                     <li>
-                    <Link to="/">Inicio</Link> {/* Enlace para la página de inicio */}
+                    <Link to="https://www.iso.org/es/gestion-calidad/software">La fuerza del software de gestión de calidad (ISO)</Link>
                     </li>
                     <li>
-                    <Link to="/about">Acerca de</Link> {/* Enlace a la página "Acerca de" */}
+                    <Link to="https://www.softwaredoit.es/gestion-de-calidad/index.html">Software de gestión de calidad (QMS)</Link>
+                    </li>
+                    <li>
+                    <Link to="https://safetyculture.com/es/aplicaciones/sistema-de-gestion-de-calidad">Software de gestión de calidad (SGC)</Link>
                     </li>
                 </ul>
                 </nav>
@@ -172,10 +242,25 @@ const RecursosAprendizaje = () => {
                 <nav>
                 <ul>
                     <li>
-                    <Link to="/">Inicio</Link> {/* Enlace para la página de inicio */}
+                    <Link to="https://www.3digits.es/blog/gestion-de-la-calidad-en-el-desarrollo-de-software.html">Gestión de la calidad en el desaarrollo de software</Link> 
                     </li>
                     <li>
-                    <Link to="/about">Acerca de</Link> {/* Enlace a la página "Acerca de" */}
+                    <Link to="https://qalified.com/es/blog/software-qa-testing-herramientas/">Las 10 mejores herramientas de testing de software</Link> 
+                    </li>
+                    <li>
+                    <Link to="https://www.hiberus.com/crecemos-contigo/las-mejores-herramientas-para-cada-tipo-de-testing/">Las mejores herramientas para cada tipo de testing</Link> 
+                    </li>
+                    <li>
+                    <Link to="https://blog.softexpert.com/es/mejores-softwares-para-gestion-de-calidad/">Los 8 mejores softwares para gestión de calidad en 2025</Link> 
+                    </li>
+                    <li>
+                    <Link to="https://kinsta.com/es/blog/herramientas-pruebas-rendimiento/">Las 27 mejores herramientas de pruebas de rendimiento</Link> 
+                    </li>
+                    <li>
+                    <Link to="https://www.carmatec.com/es_mx/blog/las-20-herramientas-de-pruebas-de-automatizacion-mas-populares/">Las 20 herramientas de pruebas de automatización más populares</Link> 
+                    </li>
+                    <li>
+                    <Link to="https://es.wikipedia.org/wiki/SonarQube">SonarQube</Link> 
                     </li>
                 </ul>
                 </nav>
@@ -185,10 +270,7 @@ const RecursosAprendizaje = () => {
                 <nav>
                 <ul>
                     <li>
-                    <Link to="/">Inicio</Link> {/* Enlace para la página de inicio */}
-                    </li>
-                    <li>
-                    <Link to="/about">Acerca de</Link> {/* Enlace a la página "Acerca de" */}
+                    <Link to="https://es.wikipedia.org/wiki/Revista_Espa%C3%B1ola_de_Innovaci%C3%B3n%2C_Calidad_e_Ingenier%C3%ADa_del_Software">REICIS: Revista Española de Innovación, Calidad e Ingeniería del Software</Link> 
                     </li>
                 </ul>
                 </nav>
