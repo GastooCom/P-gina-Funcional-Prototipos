@@ -315,7 +315,7 @@ const RecursosAprendizaje = () => {
             </li>
           </ul>
            <div className="imagenr">
-                    <img src={imagen8} alt="Imagen" width={150}/>
+                    <img src={imagen8} alt="Imagen" width={300}/>
                     </div>
         </div>
         <div className="ejercicioscasos-div2">
@@ -337,7 +337,7 @@ const RecursosAprendizaje = () => {
             </li>
           </ul>
            <div className="imagenr">
-                    <img src={imagen9} alt="Imagen" width={150}/>
+                    <img src={imagen9} alt="Imagen" width={300}/>
                     </div>
         </div>
         </div>
