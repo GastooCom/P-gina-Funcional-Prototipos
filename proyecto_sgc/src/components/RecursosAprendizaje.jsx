@@ -64,7 +64,7 @@ const RecursosAprendizaje = () => {
         <button className="nav-btn" onClick={() => navigate("/procesodesarrollosoft")}>Procesos de Desarrollo. Soft</button>
         <button className="nav-btn " onClick={() => navigate("/gestioncalidadsoft")}>Gestion de Calidad. Soft</button>
         <button className="nav-btn r" onClick={() => navigate("/recursosaprendizaje")}>Recursos y Aprendizaje</button>
-        <button className="nav-btn">Metodologia en detalle</button>
+        <button className="nav-btn" onClick={() => navigate("/metodologiadetalle")}>Metodologia en detalle</button>
         <button className="nav-btn">Adicionales →</button>
       </div>
 

@@ -1,0 +1,262 @@
+.pds-container {
+  background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
+  color: white;
+  font-family: Arial, sans-serif;
+  height:700vh;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background-color: #024b82;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-btn.d{
+  background-color: #cd0000;
+}
+
+.metodologia-container{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.m-caja{
+    display: flex;
+    flex-direction: column;
+}
+
+.m-scrum{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(79, 0, 0, 0.1);
+  width: 700px;
+}
+
+.m-sprint{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(79, 0, 0, 0.1);
+  width: 700px;
+}
+
+.m-roles{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(79, 0, 0, 0.1);
+  width: 700px;
+}
+
+.metodologia-container h1{
+  font-size: 3.5rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.metodologia-container p { 
+  font-size: 20px;
+  margin: 5px 0 0 0;
+  color: #dddddd;
+}
+
+.metodologia-container ul {
+  font-size: 15px;
+  margin-top: 8px;
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.metodologia-container  li {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.metodologia2-container{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.m-backlog{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(79, 0, 0, 0.1);
+  width: 700px;
+}
+
+.m-kanban{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  width: 700px;
+}
+
+.m-eventos{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(79, 0, 0, 0.1);
+  width: 700px;
+}
+
+.m-principios{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  width: 700px;
+}
+
+
+.metodologia2-container h2{
+  font-size: 2.5rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.metodologia2-container p { 
+  font-size: 30px;
+  margin: 5px 0 0 0;
+  color: #dddddd;
+}
+
+.metodologia2-container ul {
+  font-size: 15px;
+  margin-top: 8px;
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.metodologia2-container  li {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.m-eventos li, .m-principios li{
+    font-size: 18px;
+}
+
+.metodologia3-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.m-elementos{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  width: 1500px;
+}
+
+.m-caja2{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 80px; 
+    width: 50%; 
+}
+
+.m-beneficios{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(79, 0, 0, 0.1);
+  width: 700px;
+}
+
+.m-imagen{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(79, 0, 0, 0.1);
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metodologia3-container h2{
+  font-size: 2.5rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.metodologia3-container p { 
+  font-size: 25px;
+  margin: 5px 0 0 0;
+  color: #dddddd;
+}
+
+.metodologia3-container ul {
+  font-size: 15px;
+  margin-top: 8px;
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.metodologia3-container  li {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/*Boton scroll arriba*/
+.btn-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+   background: linear-gradient(120deg, #6a0f1d, #23094b);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+.btn-arriba:hover {
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
+}

@@ -5,6 +5,7 @@ import Inicio from './components/Inicio';
 import ProcesoDesarrolloSoft from "./components/ProcesoDesarrolloSoft";
 import GestionCalidadSoft from './components/GestionCalidadSoft';
 import RecursosAprendizaje from './components/RecursosAprendizaje';
+import MetodologiaDetalle from './components/MetodologiaDetalle';
 
 function App() {
   return (
@@ -14,9 +15,7 @@ function App() {
         <Route path="/procesodesarrollosoft" element={<ProcesoDesarrolloSoft />}/>
         <Route path="/gestioncalidadsoft" element={<GestionCalidadSoft />} />
         <Route path="/recursosaprendizaje" element={<RecursosAprendizaje />} />
-        {/*
         <Route path="/metodologiadetalle" element={<MetodologiaDetalle />} />
-        */}
         </Routes>
     </Router>
   );
