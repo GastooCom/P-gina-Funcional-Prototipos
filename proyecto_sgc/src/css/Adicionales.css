@@ -1,0 +1,136 @@
+.pds-container {
+  background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
+  color: white;
+  font-family: Arial, sans-serif;
+  height:700vh;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background-color: #024b82;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-btn.d{
+  background-color: #cd0000;
+}
+
+.sobrenosotros-container{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.a-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a-items{
+    display: flex;
+    gap: 20px;
+}
+
+.a-programador{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.a-diseñador{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.a-scrummaster{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.a-marketing{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.a-documentador{
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 10px;
+  line-height: 2;
+  background: rgba(4, 0, 255, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sobrenosotros-container h1{
+  font-size: 3.5rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.sobrenosotros-container h2{
+  font-size: 2rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.sobrenosotros-container p { 
+  font-size: 20px;
+  margin: 5px 0 0 0;
+  color: #dddddd;
+}

@@ -19,7 +19,7 @@ export default function Inicio() {
         <button className="nav-btn" onClick={() => navigate("/gestioncalidadsoft")}>Gestion de Calidad. Soft</button>       
         <button className="nav-btn" onClick={() => navigate("/recursosaprendizaje")}>Recursos y Aprendizaje</button>
         <button className="nav-btn" onClick={() => navigate("/metodologiadetalle")}>Metodologia en detalle</button>
-        <button className="nav-btn">Adicionales →</button>
+        <button className="nav-btn" onClick={() => navigate("/adicionales")} >Adicionales →</button>
       </div>
 
       {/* Título y descripción */}
@@ -104,7 +104,7 @@ export default function Inicio() {
                 precisión: qué pasos sigue, en qué orden, qué se necesita en cada
                 fase y cómo se evalúan los resultados.
             </p>
-            <p className="enlace">Enlace2___________</p>
+            <button className="enlace" onClick={() => navigate("/metodologiadetalle")}>Enlace4: Metodolodias en Detalle</button>
             </div>
             <div className="imagen4">
             <img src={imagen4} alt="Imagen4" width={150}/>
@@ -128,7 +128,7 @@ export default function Inicio() {
             <div className="imagen5">
             <img src={imagen5} alt="Imagen5" width={150}/>
             </div>
-            <p className="enlace">Enlace3___________</p>
+            <button className="enlace" onClick={() => navigate("/adicionales")}>Enlace5: Adicionales</button>
         </div>
         </div>
     </div>
