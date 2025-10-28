@@ -2,9 +2,30 @@ import React from "react";
 import '../css/MetodologiaDetalle.css';
 import { useNavigate, Link } from 'react-router-dom';
 import mimagen from "../imagenes/mimagen.png";
+import { useEffect, useState } from "react";
 
 const MetodologiaDetalle = () => {
     const navigate = useNavigate();
+
+    const [mostrarBoton, setMostrarBoton] = useState(false);
+    
+      useEffect(() => {
+        const manejarScroll = () => {
+          if (window.scrollY > 300) {
+            setMostrarBoton(true);
+          } else {
+            setMostrarBoton(false);
+          }
+        };
+    
+        window.addEventListener("scroll", manejarScroll);
+        return () => window.removeEventListener("scroll", manejarScroll);
+      }, []);
+    
+      const irArriba = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    
 return(
    <div className="pds-container">
       {/* Barra de navegación */}
@@ -14,7 +35,7 @@ return(
         <button className="nav-btn " onClick={() => navigate("/gestioncalidadsoft")}>Gestion de Calidad. Soft</button>
         <button className="nav-btn " onClick={() => navigate("/recursosaprendizaje")}>Recursos y Aprendizaje</button>
         <button className="nav-btn d" onClick={() => navigate("/metodologiadetalle")}>Metodologia en detalle</button>
-        <button className="nav-btn">Adicionales →</button>
+        <button className="nav-btn" onClick={() => navigate("/adicionales")}>Adicionales →</button>
       </div>
     
     <div className="metodologia-container">
@@ -155,7 +176,12 @@ return(
             </div>
         </div>
     </div>
-
+    {/* Botón Scroll to Top */}
+      {mostrarBoton && (
+        <button className="btn-arriba" onClick={irArriba}>
+          ⬆
+        </button>
+      )}
   </div>
  )
 }

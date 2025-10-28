@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-.nav-btn.d{
+.nav-btn.a{
   background-color: #cd0000;
 }
 
@@ -37,6 +37,7 @@
   max-width: 1500px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 150px;
 }
 
 .a-titulo{
@@ -133,4 +134,107 @@
   font-size: 20px;
   margin: 5px 0 0 0;
   color: #dddddd;
+}
+
+/*FORMULARIO*/
+
+.formulario-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(79, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-container h2 {
+  font-size: 2Rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.formulario-container p {
+  margin-bottom: 25px;
+  font-size: 20PX;
+}
+
+.formulario label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #002b80;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #cccccc;
+}
+
+.formulario textarea {
+  resize: none;
+  height: 70px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.botones button {
+  background-color: #0040cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+  font-size: 20px;
+}
+
+.botones button:hover {
+  background-color: #003399;
+}
+
+.mensaje-enviado {
+  margin-top: 15px;
+  color: #c7ffb1;
+  font-weight: bold;
+}
+
+/*Boton scroll arriba*/
+.btn-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+   background: linear-gradient(120deg, #6a0f1d, #23094b);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+.btn-arriba:hover {
+  background: linear-gradient(120deg, #6a0f1d, #23094b);
 }
