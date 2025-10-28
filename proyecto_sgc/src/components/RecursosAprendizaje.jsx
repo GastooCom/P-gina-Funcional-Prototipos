@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import imagen7 from "../imagenes/imagen7.png";
 import imagen8 from "../imagenes/imagen8.png";
 import imagen9 from "../imagenes/imagen9.png";
+import scrumcomparador from "../imagenes/scrumcomparador.png";
+import kanbancomparador from "../imagenes/kanbancomparador.png";
+import cascadacomparador from "../imagenes/cascadacomparador.png";
 
 const RecursosAprendizaje = () => {
   const navigate = useNavigate();
@@ -55,6 +58,47 @@ const RecursosAprendizaje = () => {
 
   const irArriba = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  /*Comparador Metodologias*/
+  const metodologiasData = {
+  Scrum: {
+    imagen: scrumcomparador,
+    Duración: "Semanas / Iterativa",
+    Flexibilidad: "Alta",
+    Roles: "Definidos (Scrum Master, Product Owner, Equipo)",
+    Documentación: "Moderada",
+  },
+  Kanban: {
+    imagen: kanbancomparador,
+    Duración: "Variable",
+    Flexibilidad: "Muy alta",
+    Roles: "No definidos",
+    Documentación: "Mínima",
+  },
+  Waterfall: {
+    imagen: cascadacomparador,
+    Duración: "Meses / Fases lineales",
+    Flexibilidad: "Baja",
+    Roles: "Definidos",
+    Documentación: "Extensa",
+  },
+  XP: {
+    Duración: "Semanas / Iterativa",
+    Flexibilidad: "Alta",
+    Roles: "Definidos (Cliente, Programador, Tester)",
+    Documentación: "Ligera",
+  },
+};
+
+  const [seleccionadas, setSeleccionadas] = useState([]);
+
+  const handleSelect = (nombre) => {
+    setSeleccionadas((prev) =>
+      prev.includes(nombre)
+        ? prev.filter((m) => m !== nombre)
+        : [...prev, nombre]
+    );
   };
 
   /*Encuesta de Preferencias Metodológica*/
@@ -374,6 +418,77 @@ const RecursosAprendizaje = () => {
         </div>
         </div>
     </div>
+
+    <div className="comparador-container">
+      <h2>Comparador de Metodologías</h2>
+      <p>
+        Esta herramienta te permite comparar diferentes metodologías de desarrollo de software
+        y ver sus características clave.
+      </p>
+    <div className="comparador2-container">
+
+      <div className="metodologias-selector">
+        {Object.keys(metodologiasData).map((nombre) => (
+          <div
+            key={nombre}
+            className={`metodologia-card ${
+              seleccionadas.includes(nombre) ? "seleccionada" : ""
+            }`}
+            onClick={() => handleSelect(nombre)}
+          >
+            <img
+              src={metodologiasData[nombre].imagen}
+              alt={nombre}
+              className="metodologia-imagen"
+            />
+            <h3>{nombre}</h3>
+          </div>
+        ))}
+      </div>
+
+      {seleccionadas.length > 0 && (
+        <div className="tabla-comparativa">
+          <table>
+            <thead>
+              <tr>
+                <th>Característica</th>
+                {seleccionadas.map((m) => (
+                  <th key={m}>{m}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {Object.keys(metodologiasData["Scrum"]).map((caracteristica) => (
+                <tr key={caracteristica}>
+                  <td>{caracteristica}</td>
+                  {seleccionadas.map((m) => (
+                    <td key={m + caracteristica}>
+                      {caracteristica === "imagen" ? (
+                        <img
+                          src={metodologiasData[m][caracteristica]}
+                          alt={m}
+                          style={{
+                            width: "50px",
+                            height: "50px",
+                            objectFit: "contain",
+                            display: "block",
+                            margin: "0 auto",
+                          }}
+                        />
+                      ) : (
+                        metodologiasData[m][caracteristica]
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </div>
+      </div>
+
 
      <div className="encuesta-container">
       <h2>Encuesta de Preferencias Metodológica</h2>
