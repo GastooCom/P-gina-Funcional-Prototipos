@@ -37,6 +37,7 @@ const RecursosAprendizaje = () => {
     )
     .sort((a, b) => a.term.localeCompare(b.term)); // Orden alfabético
 
+    /*Boton ir arriba*/
   const [mostrarBoton, setMostrarBoton] = useState(false);
 
   useEffect(() => {
@@ -55,6 +56,37 @@ const RecursosAprendizaje = () => {
   const irArriba = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  /*Encuesta de Preferencias Metodológica*/
+
+  const [equipo, setEquipo] = useState("");
+  const [duracion, setDuracion] = useState("");
+  const [estructura, setEstructura] = useState("");
+  const [sugerencia, setSugerencia] = useState("");
+
+  const calcularSugerencia = () => {
+    if (equipo === "1 persona" && estructura === "Bajo") {
+      setSugerencia("Kanban");
+    } else if (equipo === "2-5 personas" && duracion === "3-6 meses") {
+      setSugerencia("SCRUM");
+    } else if (equipo === "6-10 personas" && estructura === "Muy alto") {
+      setSugerencia("Cascada");
+    } else if (duracion === "Más de 6 meses" && estructura === "Alto") {
+      setSugerencia("Modelo en V");
+    } else {
+      setSugerencia("SCRUM");
+    }
+  };
+
+   const handleChange = (setter) => (e) => {
+    setter(e.target.value);
+  };
+
+  React.useEffect(() => {
+    if (equipo && duracion && estructura) {
+      calcularSugerencia();
+    }
+  }, [equipo, duracion, estructura]);
 
   return(
    <div className="pds-container">
@@ -341,6 +373,51 @@ const RecursosAprendizaje = () => {
                     </div>
         </div>
         </div>
+    </div>
+
+     <div className="encuesta-container">
+      <h2>Encuesta de Preferencias Metodológica</h2>
+      <p>
+        Responda las siguientes preguntas sobre tu proyecto para poder obtener una sugerencia
+        sobre qué metodología es la más adecuada.
+      </p>
+
+
+      <div className="encuesta2-container">
+      <div className="formulario-encuesta">
+        <label>¿Cuál es el tamaño de tu equipo?</label>
+        <select value={equipo} onChange={handleChange(setEquipo)}>
+          <option value="">Selecciona una opción</option>
+          <option value="1 persona">1 persona</option>
+          <option value="2-5 personas">2-5 personas</option>
+          <option value="6-10 personas">6-10 personas</option>
+          <option value="Más de 10 personas">Más de 10 personas</option>
+        </select>
+
+        <label>¿Cuál es la duración aproximada del proyecto?</label>
+        <select value={duracion} onChange={handleChange(setDuracion)}>
+          <option value="">Selecciona una opción</option>
+          <option value="Menos de 3 meses">Menos de 3 meses</option>
+          <option value="3-6 meses">3-6 meses</option>
+          <option value="Más de 6 meses">Más de 6 meses</option>
+        </select>
+
+        <label>¿Cuál es el nivel de estructuración requerido?</label>
+        <select value={estructura} onChange={handleChange(setEstructura)}>
+          <option value="">Selecciona una opción</option>
+          <option value="Bajo">Bajo</option>
+          <option value="Medio">Medio</option>
+          <option value="Alto">Alto</option>
+          <option value="Muy alto">Muy alto</option>
+        </select>
+
+        {sugerencia && (
+          <p className="sugerencia">
+            <strong>Sugerencia:</strong> {sugerencia}
+          </p>
+        )}
+      </div>
+    </div>  
     </div>
 
    {/* Botón Scroll to Top */}

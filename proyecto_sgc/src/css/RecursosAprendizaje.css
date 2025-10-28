@@ -2,7 +2,7 @@
   background: linear-gradient(70deg, #002271,#031338, #cd0000, #ffffff);
   color: white;
   font-family: Arial, sans-serif;
-  height:700vh;
+  min-height:800vh;
   padding: 20px;
 }
 
@@ -257,4 +257,66 @@
   margin-top: 20px;
   gap: 50px;
   flex-direction: column;
+}
+
+
+/*Encuesta Metodologica*/
+
+
+.encuesta-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+
+.encuesta2-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  background: rgba(79, 0, 0, 0.1);
+}
+
+.encuesta-container h2 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.encuesta-container p {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.formulario-encuesta label {
+  display: block;
+  text-align: left;
+  margin: 12px 0 5px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.formulario-encuesta select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #333;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sugerencia {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #e2e2e2;
+  font-size: 1.1em;
 }
