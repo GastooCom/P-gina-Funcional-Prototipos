@@ -85,7 +85,7 @@ const Adicionales = () => {
   
 
 return(
-   <div className="pds-container">
+   <div className="pds-container4">
       {/* Barra de navegación */}
       <div className="navbar">
         <button className="nav-btn" onClick={() => navigate("/")}>← Inicio</button>

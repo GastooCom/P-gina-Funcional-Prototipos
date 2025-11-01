@@ -29,7 +29,7 @@ export default function ProcesoDesarrolloSoft() {
   };
 
   return (
-    <div className="pds-container">
+    <div className="pds-container3">
       {/* Barra de navegación */}
       <div className="navbar">
         <button className="nav-btn" onClick={() => navigate("/")}>← Inicio</button>

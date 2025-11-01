@@ -64,7 +64,7 @@ const RecursosAprendizaje = () => {
   const metodologiasData = {
   Scrum: {
     imagen: scrumcomparador,
-    Duración: "Semanas / Iterativa",
+    Duración: "Corta (2-4 semanas)",
     Flexibilidad: "Alta",
     Roles: "Definidos (Scrum Master, Product Owner, Equipo)",
     Documentación: "Moderada",
@@ -72,24 +72,40 @@ const RecursosAprendizaje = () => {
   Kanban: {
     imagen: kanbancomparador,
     Duración: "Variable",
-    Flexibilidad: "Muy alta",
+    Flexibilidad: "Alta",
     Roles: "No definidos",
     Documentación: "Mínima",
   },
   Waterfall: {
     imagen: cascadacomparador,
-    Duración: "Meses / Fases lineales",
+    Duración: "Meses o más",
     Flexibilidad: "Baja",
     Roles: "Definidos",
     Documentación: "Extensa",
   },
+  "Modelo en V": {
+    imagen: "/images/modelo_v.png",
+    Duración: "Mediana a larga",
+    Flexibilidad: "Baja",
+    Roles: "Definidos",
+    Documentación: "Muy detallada",
+  },
+  Incremental: {
+    imagen: "/images/incremental.png",
+    Duración: "Iterativa por módulos",
+    Flexibilidad: "Media",
+    Roles: "Definidos",
+    Documentación: "Moderada",
+  },
   XP: {
-    Duración: "Semanas / Iterativa",
-    Flexibilidad: "Alta",
-    Roles: "Definidos (Cliente, Programador, Tester)",
-    Documentación: "Ligera",
+    imagen: "/images/xp.png",
+    Duración: "Iterativa (1-2 semanas)",
+    Flexibilidad: "Muy alta",
+    Roles: "Definidos (Desarrolladores, Cliente, Coach, Tracker)",
+    Documentación: "Mínima",
   },
 };
+
 
   const [seleccionadas, setSeleccionadas] = useState([]);
 
@@ -111,29 +127,33 @@ const RecursosAprendizaje = () => {
   const calcularSugerencia = () => {
     if (equipo === "1 persona" && estructura === "Bajo") {
       setSugerencia("Kanban");
-    } else if (equipo === "2-5 personas" && duracion === "3-6 meses") {
-      setSugerencia("SCRUM");
+    } else if (equipo === "2-5 personas" && duracion === "3-6 meses" && estructura === "Medio") {
+      setSugerencia("Scrum");
     } else if (equipo === "6-10 personas" && estructura === "Muy alto") {
-      setSugerencia("Cascada");
+      setSugerencia("Cascada (Waterfall)");
     } else if (duracion === "Más de 6 meses" && estructura === "Alto") {
       setSugerencia("Modelo en V");
+    } else if (equipo === "2-5 personas" && duracion === "Menos de 3 meses" && estructura === "Bajo") {
+      setSugerencia("XP (Extreme Programming)");
+    } else if (equipo === "6-10 personas" && duracion === "3-6 meses" && estructura === "Medio") {
+      setSugerencia("Incremental");
     } else {
-      setSugerencia("SCRUM");
+      setSugerencia("Scrum");
     }
   };
 
-   const handleChange = (setter) => (e) => {
+  const handleChange = (setter) => (e) => {
     setter(e.target.value);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (equipo && duracion && estructura) {
       calcularSugerencia();
     }
   }, [equipo, duracion, estructura]);
 
   return(
-   <div className="pds-container">
+   <div className="pds-container1">
       {/* Barra de navegación */}
       <div className="navbar">
         <button className="nav-btn" onClick={() => navigate("/")}>← Inicio</button>
@@ -499,40 +519,52 @@ const RecursosAprendizaje = () => {
 
 
       <div className="encuesta2-container">
-      <div className="formulario-encuesta">
-        <label>¿Cuál es el tamaño de tu equipo?</label>
-        <select value={equipo} onChange={handleChange(setEquipo)}>
-          <option value="">Selecciona una opción</option>
-          <option value="1 persona">1 persona</option>
-          <option value="2-5 personas">2-5 personas</option>
-          <option value="6-10 personas">6-10 personas</option>
-          <option value="Más de 10 personas">Más de 10 personas</option>
-        </select>
+        <div className="formulario-encuesta">
+          <label>¿Cuál es el tamaño de tu equipo?</label>
+          <select value={equipo} onChange={handleChange(setEquipo)}>
+            <option value="">Selecciona una opción</option>
+            <option value="1 persona">1 persona</option>
+            <option value="2-5 personas">2-5 personas</option>
+            <option value="6-10 personas">6-10 personas</option>
+            <option value="Más de 10 personas">Más de 10 personas</option>
+          </select>
 
-        <label>¿Cuál es la duración aproximada del proyecto?</label>
-        <select value={duracion} onChange={handleChange(setDuracion)}>
-          <option value="">Selecciona una opción</option>
-          <option value="Menos de 3 meses">Menos de 3 meses</option>
-          <option value="3-6 meses">3-6 meses</option>
-          <option value="Más de 6 meses">Más de 6 meses</option>
-        </select>
+          <label>¿Cuál es la duración aproximada del proyecto?</label>
+          <select value={duracion} onChange={handleChange(setDuracion)}>
+            <option value="">Selecciona una opción</option>
+            <option value="Menos de 3 meses">Menos de 3 meses</option>
+            <option value="3-6 meses">3-6 meses</option>
+            <option value="Más de 6 meses">Más de 6 meses</option>
+          </select>
 
-        <label>¿Cuál es el nivel de estructuración requerido?</label>
-        <select value={estructura} onChange={handleChange(setEstructura)}>
-          <option value="">Selecciona una opción</option>
-          <option value="Bajo">Bajo</option>
-          <option value="Medio">Medio</option>
-          <option value="Alto">Alto</option>
-          <option value="Muy alto">Muy alto</option>
-        </select>
+          <label>¿Cuál es el nivel de estructuración requerido?</label>
+          <select value={estructura} onChange={handleChange(setEstructura)}>
+            <option value="">Selecciona una opción</option>
+            <option value="Bajo">Bajo</option>
+            <option value="Medio">Medio</option>
+            <option value="Alto">Alto</option>
+            <option value="Muy alto">Muy alto</option>
+          </select>
 
-        {sugerencia && (
-          <p className="sugerencia">
-            <strong>Sugerencia:</strong> {sugerencia}
-          </p>
-        )}
+          {sugerencia && (
+            <div className="sugerencia">
+              <strong>Sugerencia:</strong> {sugerencia}
+              <p className="sugerencia-desc">
+                {
+                  {
+                    "Kanban": "Ideal para proyectos pequeños y flexibles, sin roles formales.",
+                    "Scrum": "Recomendado para equipos pequeños o medianos con trabajo iterativo.",
+                    "Cascada (Waterfall)": "Adecuado para proyectos grandes y estructurados.",
+                    "Modelo en V": "Enfocado en validación y pruebas desde el inicio.",
+                    "XP (Extreme Programming)": "Perfecto para equipos pequeños con entregas rápidas y alta colaboración.",
+                    "Incremental": "Útil si el proyecto se desarrolla por partes o módulos."
+                  }[sugerencia]
+                }
+              </p>
+            </div>
+          )}
+        </div>
       </div>
-    </div>  
     </div>
 
    {/* Botón Scroll to Top */}

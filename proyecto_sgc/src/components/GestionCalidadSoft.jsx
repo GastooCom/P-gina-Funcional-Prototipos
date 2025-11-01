@@ -27,7 +27,7 @@ const GestionCalidadSoft = () => {
   };
 
   return (
-    <div className="pds-container">
+    <div className="pds-container2">
       {/* Barra de navegación */}
       <div className="navbar">
         <button className="nav-btn" onClick={() => navigate("/")}>← Inicio</button>
