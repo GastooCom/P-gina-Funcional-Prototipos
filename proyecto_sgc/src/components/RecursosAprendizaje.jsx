@@ -8,6 +8,9 @@ import imagen9 from "../imagenes/imagen9.png";
 import scrumcomparador from "../imagenes/scrumcomparador.png";
 import kanbancomparador from "../imagenes/kanbancomparador.png";
 import cascadacomparador from "../imagenes/cascadacomparador.png";
+import envcomparador from "../imagenes/graficoenv.png";
+import xpcomparador from "../imagenes/graficoxp.png";
+import incrementalcomparador from "../imagenes/graficoincremental.png";
 
 const RecursosAprendizaje = () => {
   const navigate = useNavigate();
@@ -84,21 +87,21 @@ const RecursosAprendizaje = () => {
     Documentación: "Extensa",
   },
   "Modelo en V": {
-    imagen: "/images/modelo_v.png",
+    imagen: envcomparador,
     Duración: "Mediana a larga",
     Flexibilidad: "Baja",
     Roles: "Definidos",
     Documentación: "Muy detallada",
   },
   Incremental: {
-    imagen: "/images/incremental.png",
+    imagen: incrementalcomparador,
     Duración: "Iterativa por módulos",
     Flexibilidad: "Media",
     Roles: "Definidos",
     Documentación: "Moderada",
   },
   XP: {
-    imagen: "/images/xp.png",
+    imagen: xpcomparador,
     Duración: "Iterativa (1-2 semanas)",
     Flexibilidad: "Muy alta",
     Roles: "Definidos (Desarrolladores, Cliente, Coach, Tracker)",

@@ -35,13 +35,6 @@ export default function Inicio() {
         </div>
         <div className="icon-circle"><img src={imagen0} alt="Imagen" width={150}/></div>
       </div>
-
-      {/* Barra de búsqueda */}
-      <div className="search-bar">
-        <input type="text" placeholder="" />
-        <span className="search-icon">🔍</span>
-      </div>
-
       {/* Primera fila de tarjetas */}
       <div className="cards-container">
         <div className="card">
